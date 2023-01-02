@@ -7,10 +7,6 @@ import seaborn as sns
 from highlight_text import HighlightText
 from matplotlib.colors import LinearSegmentedColormap
 
-chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
-pass_match_id = pd.read_csv('./data/whoscored_pass_match_id.csv')
-
-
 def xT_barchart(ax, pass_data):
     # pass_df = pd.read_csv('Villarreal_pass_data.csv')
     current_match = pass_data.copy()

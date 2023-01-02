@@ -3,12 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from highlight_text import HighlightText
 
-chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
-pass_match_id = pd.read_csv('./data/whoscored_pass_match_id.csv')
-
 # function to calculate cumulative xG accumlated
-
-
 def nums_cumulative_sum(nums_list):
     return [sum(nums_list[:i+1]) for i in range(len(nums_list))]
 

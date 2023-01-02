@@ -5,9 +5,6 @@ from highlight_text import HighlightText
 import random
 from collections import Counter
 
-chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
-pass_match_id = pd.read_csv('./data/whoscored_pass_match_id.csv')
-
 def determine_goals(shots):
     goals = 0
     for shot in shots:

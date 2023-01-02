@@ -4,8 +4,6 @@ from understatscraper import Understat
 import pandas as pd
 
 chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
-shots_match_id = pd.read_csv('./data/understat_shots_match_id.csv')
-
 
 def scrape_shots_data(shots_match_id):
     driver = webdriver.Chrome(executable_path=chrome_driver_path)
