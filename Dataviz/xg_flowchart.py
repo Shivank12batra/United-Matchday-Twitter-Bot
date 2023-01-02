@@ -119,5 +119,5 @@ def xG_flowchart(shots_data):
                     step='post', color=h_color, alpha=0.1)
     ax.fill_between(x=a_min, y1=away_upper, y2=away_lower,
                     step='post', color=a_color, alpha=0.1)
-    plt.savefig('xG_flowchart_twitter_bot.png', dpi=500, bbox_inches='tight')
+    plt.savefig('images/xG_flowchart_twitter_bot.png', dpi=500, bbox_inches='tight')
 #     ax.scatter(92, -0.5, marker="*", s=500, c='#DBE708', ec='black')

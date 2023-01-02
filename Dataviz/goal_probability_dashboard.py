@@ -175,4 +175,4 @@ def goal_probability_dashboard(shots_data):
         text = ''
     HighlightText(-0.15, 1.2, f'Actual scoreline: <{final[2]} ({final[3]}%) {text}>', size=16, fontweight='bold',
                  fontfamily='serif', highlight_textprops=[{'color':'grey'}], ax=ax)
-    plt.savefig('goal_probability_dashboard_twitter_bot.png', dpi=300, bbox_inches='tight')
+    plt.savefig('images/goal_probability_dashboard_twitter_bot.png', dpi=300, bbox_inches='tight')

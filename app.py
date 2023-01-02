@@ -64,8 +64,8 @@ def tweet_images(pass_match_id, shots_match_id):
             print('data viz not functional!')
             return None
         try:
-            media_1 = api.media_upload('xG_flowchart_twitter_bot.png')
-            media_2 = api.media_upload('goal_probability_dashboard_twitter_bot.png')
+            media_1 = api.media_upload('images/xG_flowchart_twitter_bot.png')
+            media_2 = api.media_upload('images/goal_probability_dashboard_twitter_bot.png')
             #media_3 = api.media_upload('match_summary_dashboard_twitter_bot.png')
             print('done_media')
             message_1 = f'{h_team} {h_goals}-{a_goals} {a_team}\n\nRunning xG Flowchart:\n\n\n'

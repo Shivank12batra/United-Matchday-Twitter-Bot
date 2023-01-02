@@ -331,5 +331,5 @@ def match_summary_dashboard(pass_data, shots_data):
     HighlightText(0.05, 1.5, f'<{h_team}>({h_cumxG})\nVS\n<{a_team}>({a_cumxG})', size=35, fontweight='bold',
                   fontfamily='serif', highlight_textprops=[{'color': f'{h_color}'}, {'color': f'{a_color}'}], ax=ax)
     # ax.text(-0.15, 1.55, 'GAME SHOTS SIMULATION', fontsize=29, fontfamily='serif', c='grey', fontweight='bold')
-    plt.savefig('match_summary_dashboard_twitter_bot.png',
+    plt.savefig('images/match_summary_dashboard_twitter_bot.png',
                 dpi=300, bbox_inches='tight')
