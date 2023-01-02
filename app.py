@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-sys.path.insert(0, r'C:\Users\shivank\United Twitter Bot\scrapers')
-sys.path.insert(0, r'C:\Users\shivank\United Twitter Bot\dataviz')
+sys.path.insert(0, r'C:\Users\shivank\United Twitter Bot\Scrapers')
+sys.path.insert(0, r'C:\Users\shivank\United Twitter Bot\Dataviz')
 from understat import scrape_shots_data
 from whoscored import scrape_pass_data
 from xg_flowchart import xG_flowchart
