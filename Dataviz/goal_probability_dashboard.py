@@ -163,8 +163,6 @@ def goal_probability_dashboard(shots_data):
     horizontal_bar(a2, d2, h2, ax3, h_team, a_team, a_color, h_color)
     
     ax.text(-0.15, 1.55, 'GAME SHOTS SIMULATION', fontsize=29, fontfamily='serif', c='grey', fontweight='bold')
-    # HighlightText(-8, htext, f'<{hteam}> {len(h_ind)}-{len(a_ind)} <{ateam}>',size=35, fontweight='bold',fontfamily='serif',
-    #                  highlight_textprops=[{'color':'#FF0000'}, {'color':'#0D19A7'}], ax=ax)
     HighlightText(-0.15, 1.5, f'<{h_team.upper()}> ({h_cumxG} xG)  \nVS \n<{a_team.upper()}> ({a_cumxG} xG)', size=18, fontweight='bold',
                   fontfamily='serif', highlight_textprops=[{'color':f'{h_color}'}, {'color':f'{a_color}'}], ax=ax)
     HighlightText(-0.15, 1.25, f'Most probable scoreline: <{final[0]} ({final[1]}%)>', size=16, fontweight='bold',
