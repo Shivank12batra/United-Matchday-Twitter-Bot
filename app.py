@@ -1,7 +1,11 @@
 # importing the necessary libraries
 import sys
+import os
 import tweepy
 import pandas as pd
+from dotenv import load_dotenv
+load_dotenv()
+
 
 sys.path.insert(0, r'C:\Users\shivank\United Twitter Bot\scrapers')
 sys.path.insert(0, r'C:\Users\shivank\United Twitter Bot\dataviz')
@@ -34,10 +38,10 @@ def tweet_images(pass_match_id, shots_match_id):
         a_goals = shots_data['a_goals'].unique()[0]
 
         # api keys for authentication and tweet access
-        consumer_key = 'u7i8omTOjRiG9gYhlgLGvlaa1'
-        consumer_secret = 'mETBm5dRvjH495EdbORee7uDRNYhVOR2JPo38VnhJ4aZImjanK'
-        access_token = '1581214761437388800-DYZSABwWSSR5lttXBD6J2xyNkqdd4K'
-        access_token_secret = 'K2nnMI4vyK2Zme3ey05NOGFEEaMse8U21O5TtihwtqIIj'
+        consumer_key = os.getenv('CONSUMER_KEY')
+        consumer_secret = os.getenv('CONSUMER_SECRET')
+        access_token = os.getenv('ACCESS_TOKEN')
+        access_token_secret = os.getenv('ACCESS_TOKEN_SECRET')
 
         # authenticate to twitter
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
