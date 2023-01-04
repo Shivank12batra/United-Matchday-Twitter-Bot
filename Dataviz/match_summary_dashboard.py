@@ -53,29 +53,7 @@ def xT_barchart(ax, pass_data):
 
 
 def pass_network(pass_data, pitch, ax):
-    # df = pd.read_csv(filename)
     df = pass_data.copy()
-#     chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
-#     driver = webdriver.Chrome(executable_path=chrome_driver_path)
-#     teams = df['teamId'].unique().tolist()
-#     names = {}
-
-#     for team in teams:
-#         driver.get('https://1xbet.whoscored.com/Teams/{}/Show/Spain-Deportivo-Alaves'.format(team))
-#         element = driver.find_element_by_css_selector('.team-header-name')
-#         names[team] = element.text
-
-#     driver.close()
-#     df['team_name'] = df['teamId'].map(names)
-#     match_ids = df['match_id'].unique().tolist()[-1]
-#     pitch = Pitch(pitch_type='opta', pitch_color='#edece9', line_color='#082630',
-#             constrained_layout=True, tight_layout=True, line_zorder=1, linewidth=4.5, spot_scale=0.006)
-
-#     ax = pitch.draw(figsize=(8, 6))
-
-#     fig.set_facecolor('#edece9')
-
-#     opp_team = df[df['teamId'] != 32]['team_name'].unique()[0]
     man_utd = df[df['teamId'] == 32]
     man_utd['passer'] = man_utd['playerId']
     man_utd['recipient'] = man_utd['passer'].shift(-1)
