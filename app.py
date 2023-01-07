@@ -57,16 +57,20 @@ def tweet_images(pass_match_id, shots_match_id):
             print("Error during authentication")
             return None
 
-        try:
-            # invoking the functions to create the latest visualizations from United's recent game
-            xG_flowchart(shots_data)
-            print('xg_chart')
-            goal_probability_dashboard(shots_data)
-            print('functions done')
-            # match_summary_dashboard(pass_data, shots_data)
-        except:
-            print('data viz not functional!')
-            return None
+        # try:
+        #     # invoking the functions to create the latest visualizations from United's recent game
+        #     xG_flowchart(shots_data)
+        #     print('xg_chart')
+        #     goal_probability_dashboard(shots_data)
+        #     print('functions done')
+        #     # match_summary_dashboard(pass_data, shots_data)
+        # except:
+        #     print('data viz not functional!')
+        #     return None
+        xG_flowchart(shots_data)
+        print('xG_chart')
+        goal_probability_dashboard(shots_data)
+        print('functions done!')
         try:
             media_1 = api.media_upload('images/xG_flowchart_twitter_bot.png')
             media_2 = api.media_upload('images/goal_probability_dashboard_twitter_bot.png')
