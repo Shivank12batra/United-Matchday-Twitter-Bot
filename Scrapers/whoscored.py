@@ -4,7 +4,8 @@ import json
 import pandas as pd
 from pandas.io.json import json_normalize
 
-chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
+# chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
+chrome_driver_path = r'C:\Users\shivank\United Twitter Bot\selenium\chromedriver.exe'
 
 def scrape_pass_data(pass_match_id):
     driver = webdriver.Chrome(executable_path=chrome_driver_path)

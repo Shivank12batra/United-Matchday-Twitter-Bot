@@ -7,7 +7,8 @@ import json
 import pandas as pd
 from pandas.io.json import json_normalize
 
-chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
+# chrome_driver_path = r'C:\Users\shivank\selenium\chromedriver.exe'
+chrome_driver_path = r'C:\Users\shivank\United Twitter Bot\selenium\chromedriver.exe'
 
 def single_match(page, base_url='https://understat.com/match/{}'):
         """

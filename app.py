@@ -94,9 +94,9 @@ def tweet_images(pass_match_id, shots_match_id):
         print('both pass data and shots data are not available right now!')
         return None
 
-schedule.every().thursday.at("15:04").do(tweet_images(pass_match_id, shots_match_id))
+# schedule.every().thursday.at("15:04").do(tweet_images(pass_match_id, shots_match_id))
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
-# tweet_images(pass_match_id, shots_match_id)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)
+tweet_images(pass_match_id, shots_match_id)
