@@ -3,8 +3,6 @@ import sys
 import os
 import tweepy
 import pandas as pd
-import schedule
-import time
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -18,11 +16,6 @@ from goal_probability_dashboard import goal_probability_dashboard
 
 pass_match_id = pd.read_csv('./data/whoscored_pass_match_id.csv')
 shots_match_id = pd.read_csv('./data/understat_shots_match_id.csv')
-
-print(pass_match_id)
-print(shots_match_id)
-
-print(3)
 
 def tweet_images(pass_match_id, shots_match_id):
     pass_data = scrape_pass_data(pass_match_id)
